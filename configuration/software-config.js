@@ -1,4 +1,4 @@
 class SoftwareConfig {
-    static baseURL = "http://192.168.0.150:8081";
+    static baseURL = "https://jantabacki.github.io/Barcode-Portfolio-Dev-Tests";
     static redirectToBarcodePortfolio = true;
 }
