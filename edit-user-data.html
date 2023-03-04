@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./external/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./external/js/popper.min.js"></script>
+    <link rel="stylesheet" href="./external/css/bootstrap.min.css">
+    <script src="./external/js/bootstrap.min.js"></script>
+    <script src="./configuration/translations.js"></script>
+    <script src="./js/translation-manager.js"></script>
+    <script src="./js/storage-manager.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title class="translation-manager-property">barcode-portfolio-page-title</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand translation-manager-property" href="./index.html">barcode-portfolio-header-logo</a>
+    </nav>
+    <div class="center-edit-barcodes-div">
+        <span id="edit-elements-placement"></span>
+        <div style="margin-top: 15px;">
+            <button type="button" class="btn btn-success translation-manager-property" onclick="addEmptyBarcode()"
+                style="min-width: 100px; margin-top: 10px;">add-new-barcode</button>
+            <button type="button" class="btn btn-primary translation-manager-property" onclick="saveBarcodes()"
+                style="min-width: 100px; margin-top: 10px;">save-changes</button>
+            <a class="btn btn-danger translation-manager-property" style="margin-top: 10px;" href="./index.html">edit-user-data-exit-button</a>
+        </div>
+    </div>
+    <footer class="footer bg-dark">
+        <div class="container">
+            <span class="text-light translation-manager-property">copyright-footer-text</span>
+        </div>
+    </footer>
+</body>
+
+<script src="./js/refresh-page.js"></script>
+<script src="./js/generate-uuid.js"></script>
+<script src="./js/load-edit-templates.js"></script>
+<script src="./js/save-barcodes-while-edit.js"></script>
+<script src="./js/add-empty-barcode-while-edit.js"></script>
+<script src="./js/delete-barcode-while-edit.js"></script>
+
+<script src="./js/translate-page.js"></script>
+
+</html>

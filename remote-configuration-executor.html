@@ -1,0 +1,26 @@
+<script src="./configuration/remote-predefined-configuration.js"></script>
+<script src="./js/remote-storage-manager.js"></script>
+<script src="./configuration/software-config.js"></script>
+
+<script>
+    var setId = document.location.href.substring(document.location.href.indexOf('?') + 1);
+    var configuration = undefined;
+    for (var i = 0; i < RemotePredefinedConfiguration.sets.length; i++) {
+        if (RemotePredefinedConfiguration.sets[i]["setId"] === setId) {
+            configuration = RemotePredefinedConfiguration.sets[i];
+            break;
+        }
+    }
+    if (configuration !== undefined) {
+        var remoteStorageManager = new RemoteStorageManager();
+        remoteStorageManager.updateBarcodes(configuration["barcodes"]);
+        alert("Remote configuration updated");
+    } else {
+        alert("Error occured");
+    }
+    if (SoftwareConfig.redirectToBarcodePortfolio) {
+        window.location.href = SoftwareConfig.baseURL;
+    } else {
+        history.back();
+    }
+</script>

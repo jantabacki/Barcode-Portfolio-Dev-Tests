@@ -1,0 +1,1 @@
+var barcodeScope = new BarcodeScope();

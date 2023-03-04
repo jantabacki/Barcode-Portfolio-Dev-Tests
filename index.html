@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Bootstrap and JQuery -->
+    <script src="./external/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./external/js/popper.min.js"></script>
+    <link rel="stylesheet" href="./external/css/bootstrap.min.css">
+    <script src="./external/js/bootstrap.min.js"></script>
+
+    <!-- Barcode Porfolio Core translations management -->
+    <script src="./configuration/translations.js"></script>
+    <script src="./js/translation-manager.js"></script>
+
+    <!-- Barcode Portfolio Core Configuration delivery -->
+    <script src="./js/barcode-scope.js"></script>
+    <script src="./configuration/predefined-configuration.js"></script>
+    <script src="./js/storage-manager.js"></script>
+    <script src="./js/remote-storage-manager.js"></script>
+
+    <!-- External Barcode and QR Code drawing packages -->
+    <script src="./external/js/JsBarcode.all.js"></script>
+    <script src="./external/js/qrcode.js"></script>
+
+    <!-- Barcode Portfolio Core Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title class="translation-manager-property">barcode-portfolio-page-title</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand translation-manager-property" href="./index.html">barcode-portfolio-header-logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div id="navigation" class="navbar-nav">
+                <a href="./edit-user-data.html"
+                    class="btn btn-outline-success navigation-buttons translation-manager-property">user-barcode-data-edit-button</a>
+            </div>
+        </div>
+    </nav>
+    <div class="center-barcode-div">
+        <span id="barcode-placement"></span>
+        <span id="qrcode-placement"></span>
+    </div>
+    <footer class="footer bg-dark">
+        <div class="container">
+            <span class="text-light translation-manager-property">copyright-footer-text</span>
+        </div>
+    </footer>
+</body>
+
+<!-- Barcode Portfolio Core configuration loading routines -->
+<script src="./js/create-barcodes-scope.js"></script>
+<script src="./js/append-predefined-configuration-to-barcodes-scope.js"></script>
+<script src="./js/append-user-storage-to-barcodes-scope.js"></script>
+<script src="./js/append-remotely-predefined-storage-to-barcodes-scope.js"></script>
+<script src="./js/draw-barcodes-scope.js"></script>
+
+<!-- Barcode Portfolio Core utilities -->
+<script src="./js/update-barcode-on-click.js"></script>
+<script src="./js/refresh-page.js"></script>
+<script src="./js/generate-uuid.js"></script>
+
+<!-- Barcode Portfolio Core Translation executor -->
+<script src="./js/translate-page.js"></script>
+
+</html>
