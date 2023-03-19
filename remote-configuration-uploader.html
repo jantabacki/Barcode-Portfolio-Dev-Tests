@@ -5,18 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Barcode Portfolio Core Software Configuration -->
+    <script src="./configuration/software-config.js"></script>
+
+    <!-- External Bootstrap and JQuery -->
     <script src="./external/js/jquery-3.2.1.slim.min.js"></script>
     <script src="./external/js/popper.min.js"></script>
     <link rel="stylesheet" href="./external/css/bootstrap.min.css">
     <script src="./external/js/bootstrap.min.js"></script>
+
+    <!-- Barcode Porftolio Core translations -->
     <script src="./configuration/translations.js"></script>
     <script src="./js/translation-manager.js"></script>
+
+    <!-- Barcode Portfolio Core predefined configurations -->
     <script src="./configuration/predefined-configuration.js"></script>
+    <script src="./configuration/remote-predefined-configuration.js"></script>
+
+    <!-- External Barcode and QRCode generation tools -->
     <script src="./external/js/JsBarcode.all.js"></script>
     <script src="./external/js/qrcode.js"></script>
-    <script src="./configuration/remote-predefined-configuration.js"></script>
-    <script src="./configuration/software-config.js"></script>
+
+    <!-- Barcode Portfolio Core Styles -->
     <link rel="stylesheet" href="./css/style.css">
+
     <title class="translation-manager-property">barcode-portfolio-page-title</title>
 </head>
 
@@ -33,8 +46,10 @@
     </footer>
 </body>
 
+<!-- Barcode Portfolio Core QRCode for remote configuration loader -->
 <script src="./js/load-qrcodes-for-each-configuration-section.js"></script>
 
+<!-- Barcode Portfolio Core translation routines -->
 <script src="./js/translate-page.js"></script>
 
 </html>

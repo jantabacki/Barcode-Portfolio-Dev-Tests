@@ -1,4 +1,4 @@
-function saveBarcodes() {
+function saveBarcodes(showAlert = false) {
     var storageManager = new StorageManager();
     var barcodes = storageManager.getBarcodes();
     for (var i = 0; i < barcodes.length; i++) {
@@ -9,5 +9,8 @@ function saveBarcodes() {
         barcode["type"] = document.getElementById("barcode-type-" + barcode["id"]).value;
     }
     storageManager.updateStorage(barcodes);
+    if (showAlert) {
+        alert(new TranslationManager().translatePhrase(SoftwareConfig.defaultLanguage, new Translations(), "changes-saved-alert-message"));
+    }
     refresh();
 }

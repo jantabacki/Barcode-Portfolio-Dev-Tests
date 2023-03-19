@@ -16,5 +16,7 @@ function barcodeClicked($id) {
             new QRCode(document.getElementById("qrcode-placement"), barcode["code"]);
             document.getElementById("barcode-placement").innerHTML = "";
         }
+        document.getElementById("barcode-group").innerHTML = barcode.group;
+        document.getElementById("barcode-name").innerHTML = barcode.name;
     }
 }

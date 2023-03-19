@@ -1,3 +1,1 @@
-var translationManager = new TranslationManager();
-var translations = new Translations();
-translationManager.translatePage("en-GB", translations);
+new TranslationManager().translatePage(SoftwareConfig.defaultLanguage, new Translations());

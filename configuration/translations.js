@@ -1,7 +1,7 @@
 class Translations {
     base = {
         "en-GB": {
-            "add-new-barcode": "Add new barcode",
+            "add-new-barcode": "Add barcode",
             "save-changes": "Save changes",
             "remove-user-barcode": "Remove",
             "barcode-portfolio-header-logo": "Barcode Portfolio",
@@ -18,6 +18,10 @@ class Translations {
             "edit-user-barcode-select-type-qrcode": "QR code",
             "edit-user-data-exit-button": "Exit",
             "copyright-footer-text": "© 2023 Jan Tabacki - All Rights Reserved.",
+            "changes-saved-alert-message": "Saved changes.",
+            "are-you-sure-during-barcode-delete-message": "Are you sure you want to delete a barcode?",
+            "remote-configuration-updated-message": "Remote configuration updated.",
+            "remote-configuration-update-error-message": "Error occured.",
         },
         "pl-PL": {
             "add-new-barcode": "Dodaj kod kreskowy",
@@ -37,6 +41,10 @@ class Translations {
             "edit-user-barcode-select-type-qrcode": "QR kod",
             "edit-user-data-exit-button": "Wyjdź",
             "copyright-footer-text": "© 2023 Jan Tabacki - Wszelkie prawa zastrzeżone.",
+            "changes-saved-alert-message": "Zapisano zmiany.",
+            "are-you-sure-during-barcode-delete-message": "Czy na pewno chcesz skasować kod kreskowy?",
+            "remote-configuration-updated-message": "Zdalna konfiguracja została zaktualizowana.",
+            "remote-configuration-update-error-message": "Wystąpił błąd.",
         }
     }
 

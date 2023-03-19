@@ -27,4 +27,8 @@ class TranslationManager {
             }
         }
     }
+
+    translatePhrase(languageCode, translations, phrase) {
+        return translations.base[languageCode][phrase];
+    }
 }
